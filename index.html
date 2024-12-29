@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 2em 0;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 1em 0;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+        }
+
+        .menu-item span {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+        
+        form button {
+            background-color: #ff6347;
+            color: white;
+            padding: 0.7em 1.5em;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Delicious Pizza</h1>
+        <p>The best pizza in town, made fresh just for you!</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <h3>Margherita</h3>
+                <span>$10.99</span>
+            </div>
+            <div class="menu-item">
+                <h3>Pepperoni</h3>
+                <span>$12.99</span>
+            </div>
+            <div class="menu-item">
+                <h3>Veggie</h3>
+                <span>$11.99</span>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ Chicken</h3>
+                <span>$13.99</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Delicious Pizza, we believe in quality and taste. Our pizzas are made with fresh ingredients and baked to perfection. Family-owned and operated, we are committed to serving our community with delicious, handcrafted pizzas.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Delicious Pizza. All rights reserved.</p>
+    </footer>
+</body>
+</html>
